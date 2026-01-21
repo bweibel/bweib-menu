@@ -1,0 +1,232 @@
+{
+  "key": "group_menu_item_fields",
+  "title": "Menu Item Fields",
+  "fields": [
+    {
+      "key": "field_menu_item_price_display",
+      "label": "Price (Display)",
+      "name": "price_display",
+      "type": "text",
+      "instructions": "Examples: 12, 13, 18, 26, MP, 12 / 16",
+      "required": 0,
+      "wrapper": {
+        "width": "33",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "e.g. 18",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_menu_item_price_secondary",
+      "label": "Price (Secondary)",
+      "name": "price_secondary",
+      "type": "text",
+      "instructions": "Optional. Use for add-ons or second size pricing (e.g. +2).",
+      "required": 0,
+      "wrapper": {
+        "width": "33",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "e.g. +2",
+      "prepend": "",
+      "append": ""
+    },
+    {
+      "key": "field_menu_item_sort_order",
+      "label": "Sort Order",
+      "name": "sort_order",
+      "type": "number",
+      "instructions": "Lower numbers appear first within a section.",
+      "required": 0,
+      "wrapper": {
+        "width": "34",
+        "class": "",
+        "id": ""
+      },
+      "default_value": 0,
+      "placeholder": "0",
+      "prepend": "",
+      "append": "",
+      "min": 0,
+      "step": 1
+    },
+    {
+      "key": "field_menu_item_description",
+      "label": "Description",
+      "name": "description",
+      "type": "textarea",
+      "instructions": "Short menu description (one to two lines).",
+      "required": 0,
+      "wrapper": {
+        "width": "100",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": 500,
+      "rows": 3,
+      "new_lines": "br"
+    },
+    {
+      "key": "field_menu_item_modifiers",
+      "label": "Modifiers / Details",
+      "name": "modifiers",
+      "type": "textarea",
+      "instructions": "Optional line for dressings, sauces, add-ons, etc. Example: Choice of dressing, Cajun rub +2.",
+      "required": 0,
+      "wrapper": {
+        "width": "100",
+        "class": "",
+        "id": ""
+      },
+      "default_value": "",
+      "placeholder": "",
+      "maxlength": 500,
+      "rows": 2,
+      "new_lines": "br"
+    },
+    {
+      "key": "field_menu_item_dietary_flags",
+      "label": "Dietary Flags",
+      "name": "dietary_flags",
+      "type": "checkbox",
+      "instructions": "Used for filtering + small badges.",
+      "required": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "choices": {
+        "gf": "GF (Gluten Free)",
+        "v": "V (Vegetarian)",
+        "vg": "VG (Vegan)",
+        "df": "DF (Dairy Free)",
+        "nf": "NF (Nut Free)"
+      },
+      "default_value": [],
+      "return_format": "value",
+      "layout": "vertical",
+      "toggle": 0,
+      "save_custom": 0
+    },
+    {
+      "key": "field_menu_item_spice_level",
+      "label": "Spice Level",
+      "name": "spice_level",
+      "type": "select",
+      "instructions": "Optional. Useful for filtering or a chili icon.",
+      "required": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "choices": {
+        "none": "None",
+        "mild": "Mild",
+        "medium": "Medium",
+        "hot": "Hot"
+      },
+      "default_value": "none",
+      "allow_null": 0,
+      "multiple": 0,
+      "ui": 1,
+      "return_format": "value",
+      "ajax": 0,
+      "placeholder": ""
+    },
+    {
+      "key": "field_menu_item_badges",
+      "label": "Badges",
+      "name": "badges",
+      "type": "checkbox",
+      "instructions": "Optional small labels (New, Seasonal, Popular).",
+      "required": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "choices": {
+        "new": "New",
+        "seasonal": "Seasonal",
+        "popular": "Popular"
+      },
+      "default_value": [],
+      "return_format": "value",
+      "layout": "horizontal",
+      "toggle": 0
+    },
+    {
+      "key": "field_menu_item_available",
+      "label": "Available",
+      "name": "available",
+      "type": "true_false",
+      "instructions": "If disabled, item can be hidden or shown as unavailable.",
+      "required": 0,
+      "wrapper": {
+        "width": "50",
+        "class": "",
+        "id": ""
+      },
+      "message": "Item is currently available",
+      "default_value": 1,
+      "ui": 1,
+      "ui_on_text": "Yes",
+      "ui_off_text": "No"
+    },
+    {
+      "key": "field_menu_item_image",
+      "label": "Item Image (Optional)",
+      "name": "item_image",
+      "type": "image",
+      "instructions": "Optional. Useful for specials or featured items.",
+      "required": 0,
+      "wrapper": {
+        "width": "100",
+        "class": "",
+        "id": ""
+      },
+      "return_format": "id",
+      "preview_size": "medium",
+      "library": "all"
+    }
+  ],
+  "location": [
+    [
+      {
+        "param": "post_type",
+        "operator": "==",
+        "value": "menu_item"
+      }
+    ]
+  ],
+  "menu_order": 0,
+  "position": "acf_after_title",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": [
+    "the_content",
+    "excerpt",
+    "discussion",
+    "comments",
+    "author",
+    "format",
+    "page_attributes",
+    "featured_image",
+    "categories",
+    "tags",
+    "send-trackbacks"
+  ],
+  "active": true,
+  "description": "",
+  "show_in_rest": 0
+}

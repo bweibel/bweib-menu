@@ -1,0 +1,20 @@
+{
+  "apiVersion": 2,
+  "name": "bweib-menu/menu-display",
+  "title": "Menu Display",
+  "category": "widgets",
+  "icon": "food",
+  "description": "Displays the restaurant menu with section grouping and real-time filtering.",
+  "supports": {
+    "html": false
+  },
+  "attributes": {
+    "defaultSection": { "type": "string", "default": "" },
+    "showFilters": { "type": "boolean", "default": true },
+    "twoColumnDesktop": { "type": "boolean", "default": true }
+  },
+  "editorScript": "file:./editor.js",
+  "style": "file:./style.css",
+  "viewScript": "file:./view.js",
+  "render": "file:./render.php"
+}

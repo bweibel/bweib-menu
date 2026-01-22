@@ -1,0 +1,162 @@
+.bweib-menu-display {
+  margin: 0 auto;
+}
+
+.bweib-menu-filters {
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+  padding-bottom: 14px;
+}
+
+.bweib-menu-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+  font-family: Oswald, sans-serif;
+}
+
+.bweib-tab {
+  appearance: none;
+  border: 1px solid rgba(0,0,0,.2);
+  background: transparent;
+  padding: 8px 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.bweib-tab.is-active {
+  border-color: rgba(0,0,0,.6);
+  background-color: #4f4379;
+  border-color: currentColor;
+  color: white;
+
+}
+
+.bweib-menu-tools {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.bweib-menu-search {
+  flex: 1;
+  min-width: 220px;
+  padding: 10px 12px;
+  border: 1px solid rgba(0,0,0,.2);
+}
+
+.bweib-menu-toggle {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  font-weight: 600;
+}
+
+.bweib-menu-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.bweib-chip {
+  appearance: none;
+  border: 1px dashed rgba(0,0,0,.25);
+  background: transparent;
+  padding: 6px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+    font-family: Oswald, sans-serif;
+font-size: .8em;
+}
+
+.bweib-chip.is-active {
+  border-style: solid;
+}
+
+.bweib-menu-section {
+  margin: 1rem 0 2rem;
+  display: flex;
+}
+
+.bweib-menu-section-title {
+  text-transform: uppercase;
+    writing-mode: vertical-rl;
+    position: sticky;
+    top: 140px;
+    color: #4f4379;
+
+}
+
+.bweib-menu-items {
+  display: grid;
+  gap: 14px;
+}
+
+.bweib-menu-display.is-two-col .bweib-menu-items {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 60rem) {
+  .bweib-menu-display.is-two-col .bweib-menu-items {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+  }
+}
+
+.bweib-menu-item-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: baseline;
+}
+
+.bweib-menu-item-name {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.bweib-menu-item-prices {
+  display: inline-flex;
+  gap: 8px;
+  white-space: nowrap;
+  font-weight: 700;
+}
+
+.bweib-menu-item-desc p,
+.bweib-menu-item-mods p {
+  margin: 6px 0 0;
+  line-height: 1.35;
+}
+
+.bweib-menu-item-mods {
+  font-style: italic;
+  opacity: .85;
+}
+
+.bweib-menu-item-flags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.bweib-pill {
+  font-size: .75rem;
+  padding: 3px 8px;
+  border: 1px solid rgba(0,0,0,.2);
+}
+
+.bweib-menu-loading {
+  margin-top: 14px;
+  font-weight: 700;
+}
+
+.bweib-menu-empty,
+.bweib-menu-error {
+  padding: 18px 0;
+  font-weight: 600;
+}
